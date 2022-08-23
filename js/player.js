@@ -6,11 +6,9 @@ function display(players)
     const tableBody = document.getElementById('player-list');
     tableBody.innerHTML = "";
     
-
-   
     for (let i= 0; i < 6; i++){
     
-        if(i<5){
+        if(i<=4){
 
     //console.log(playerArray[i].playerName);
     const name = playerArray[i].playerName;
@@ -31,10 +29,6 @@ function display(players)
     }
 }
 }    
-
-
-    
-
 function addToList(player){
         //console.log(player.parentNode.parentNode.children[0].innerText);
         player.disabled = true;
@@ -47,9 +41,7 @@ function addToList(player){
         //console.log(playerObj)
         playerArray.push(playerObj);
         //console.log(playerArray)
-    
         //document.getElementById("total-added-player").innerText = playerArray.length;
-    
         display(playerArray);
 }
 
