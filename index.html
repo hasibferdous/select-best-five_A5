@@ -44,7 +44,7 @@
                   <h2 class="card-title text-white">Lionel Messi</h2>
                   <p class="text-gray-500">36 Goals 120 Assist</p>
                   <div class="card-actions">
-                    <button class="btn btn-success w-48">Select</button>
+                    <button class="btn btn-success w-48" onclick="addToList(this)">Select</button>
                   </div>
                 </div>
               </div>
@@ -57,7 +57,7 @@
                   <h2 class="card-title text-white">Neymar Jr</h2>
                   <p class="text-gray-500">30 Goals 100 Assist</p>
                   <div class="card-actions">
-                    <button class="btn btn-success w-48">Select</button>
+                    <button class="btn btn-success w-48" onclick="addToList(this)">Select</button>
                   </div>
                 </div>
               </div>
@@ -70,7 +70,7 @@
                   <h2 class="card-title text-white">Sergio Ramos</h2>
                   <p class="text-gray-500">26 Goals 80 Assist</p>
                   <div class="card-actions">
-                    <button class="btn btn-success w-48">Select</button>
+                    <button class="btn btn-success w-48" onclick="addToList(this)">Select</button>
                   </div>
                 </div>
               </div>
@@ -83,7 +83,7 @@
                   <h2 class="card-title text-white">Renato Sanches</h2>
                   <p class="text-gray-500">25 Goals 70 Assist</p>
                   <div class="card-actions">
-                    <button class="btn btn-success w-48">Select</button>
+                    <button class="btn btn-success w-48" onclick="addToList(this)">Select</button>
                   </div>
                 </div>
               </div>              
@@ -96,7 +96,7 @@
                   <h2 class="card-title text-white">Kylian Mbappé</h2>
                   <p class="text-gray-500">32 Goals 60 Assist</p>
                   <div class="card-actions">
-                    <button class="btn btn-success w-48">Select</button>
+                    <button class="btn btn-success w-48" onclick="addToList(this)">Select</button>
                   </div>
                 </div>
               </div>
@@ -109,15 +109,40 @@
                   <h2 class="card-title text-white">Cristiano Ronaldo</h2>
                   <p class="text-gray-500">37 Goals 107 Assist</p>
                   <div class="card-actions">
-                    <button class="btn btn-success w-48">Select</button>
+                    <button class="btn btn-success w-48" onclick="addToList(this)">Select</button>
                   </div>
                 </div>
               </div> 
               </div> 
-              </div>           
+              </div>
+
             <!-- selected player list-->
-            <div class="col-start-4 col-end-6">
-            <div class="w-3/5 grid grid-cols-3 gap-2">Selected Five</div>
+            <div class="col-start-3 col-end-7">
+            <div class=" grid grid-cols-1 gap-2">
+                <!--list table-->
+                <div class="bg-black w-96 mr-12 h-96">
+                   <table class="table w-96 mr-12">
+                      <!-- head -->
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th><h1 class="text-2xl mx-12">Selected - V</h1></th>
+                       </tr>
+                      </thead>
+                      
+                      <tbody id="player-list">
+                    
+                        
+                      </tbody>
+                    </table>
+                </div>
+
+            <!--budget Calculation-->
+            <div>
+                <h1>Budget</h1>
+            </div>
+
+            </div>
         </div>
     </section> 
 
@@ -126,6 +151,6 @@
     
 
 
-
+<script src="js/player.js"></script>
 </body>
 </html>

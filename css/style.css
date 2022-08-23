@@ -1,11 +1,11 @@
 body {
-    background-color: gray;
+    background-color: rgb(2, 29, 46);
 }
 .banner {
     background-color: black;
     
     height: 500px;
-    width: 1400px;
+    width: 1349px;
     
     display: flex;
 }
@@ -30,3 +30,4 @@ body {
     margin-left: 60px;
     margin-top: 30px;
 }
+
