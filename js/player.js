@@ -24,7 +24,7 @@ function display(players)
     }
 
     else {
-        alert('Only Five Player is allowed');
+        alert('Only Five Players are allowed');
         return;
     }
 }
