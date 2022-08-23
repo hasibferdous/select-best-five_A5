@@ -45,11 +45,36 @@ function addToList(player){
         display(playerArray);
 }
 
-
-
 //budget section
 
+function playerField() {
+    
+    const playerInputField = document.getElementById("player-field");
+    const playerInputFieldString = playerInputField.value;
+    const totalPlayer = parseFloat(playerInputFieldString);
+    return totalPlayer*5;
+}
+document.getElementById("calculate-bt").addEventListener("click", function () {
+    const totalPlayerE = totalPlayer*5;
+    const totalPlayerElement = document.getElementById("total-player");
+    totalPlayerElement.innerText = totalPlayerE;
+})
 
+document.getElementById("calculate-btn").addEventListener("click", function () {
+    const totalPlayer = playerField();
 
+    const managerInputField = document.getElementById("manager-field");
+    const managerInputFieldString = managerInputField.value;
+    const managerField = parseFloat(managerInputFieldString)
+    managerInputField.value = "";
 
+    const coachInputField = document.getElementById("coach-field");
+    const coachInputFieldString = coachInputField.value;
+    const coachField = parseFloat(coachInputFieldString);
+    coachInputField.value = ""
 
+    const totalExpences = totalPlayer + managerField + coachField;
+    const totalExpencesElement = document.getElementById("total-expenses");
+    totalExpencesElement.innerText = totalExpences;
+
+})
