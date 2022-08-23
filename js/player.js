@@ -8,7 +8,7 @@ function display(players)
     
     for (let i= 0; i < 6; i++){
     
-        if(i<=4){
+        
 
     //console.log(playerArray[i].playerName);
     const name = playerArray[i].playerName;
@@ -19,7 +19,7 @@ function display(players)
     <th>${i + 1}</th>
     <td>${name} </td>
     `
-    
+    if(i<=4){
     tableBody.appendChild(tr);
     }
 
@@ -48,6 +48,7 @@ function addToList(player){
 
 
 //budget section
+
 
 
 
