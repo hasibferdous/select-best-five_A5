@@ -22,16 +22,16 @@
             <img src="images/cristiano7.png" alt="player" height="470px" width="457px">
         </div>
         <div class="box1">
-            <h1>Select Your Best Five</h1>
-            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit 
-                officia consequat duis enim velit mollit. Exercitation veniam consequat sunt 
-                nostrud amet</p>
+            <h1>The Best Five</h1>
+            <p>The professional world of football has been carefully modelled and recreated to empower with all the power
+                 and tools to create  football story and live out the dreams. Buy the players you want. Set the tactics
+                 you favour. Lift the trophies you desire.  Your club, your way.</p>
             </div>
 
     </div>
     <!--player options and selection list-->
     <section class="w-full mx-auto mt-10 ">
-        <div class="grid grid-cols-2 divide-x">
+        <div class="grid grid-cols-2">
             <!--all players-->
             <div class="mx-5 col-start-1 col-end-3">
             <div class="w-9/15 mx-5 grid grid-cols-3 gap-2">
@@ -137,44 +137,50 @@
                     </table>
                 </div>
             </div>
+
+
             <!--budget Calculation-->
-            <div class="col-sm-12 col-md-12  col-xl-5 mt-5 mr-12 text-white" style="background-color: #332c2c">
+            <div class="col-sm-12 col-md-12  col-xl-5 mt-10 mr-12 text-white h-96" style="background-color: #0a0808">
 
-                <h1 class="text-center">Budget</h1>
-                <p class="text-center">Per Player: <input type="number" id="income-field"
-                        class="border border-1 px-2 py-1 rounded-1"></p>
-
-                <h4 class="text-center mt-3">Expenses</h4>
-                <p class="text-center">Food: <input type="text" id="food-field"
-                        class="border border-1 px-2 py-1 rounded-1"></p>
-
-                <p class="text-center">Rent: <input type="text" id="rent-field"
-                        class="border border-1 px-2 py-1 rounded-1"></p>
-
-                <p class="text-center">Clothes: <input type="text" id="clothes-field"
-                        class="border border-1 px-2 py-1 rounded-1"></p>
+                <h1 class="text-center text-2xl">Budget</h1>
+                
+                <p class="text-center mt-5">Per Player: <input type="text" id="income-field"
+                        class="border border-1 px-2 py-1 rounded-1 w-50 mr-10 bg-black"></p>
 
                 <div class="text-center">
-                    <button class="bg-primary text-white py-1 px-4 rounded-2 border-0 fs-5"
-                        id="calculate-btn">Calculate</button>
+                    
+                    <button class="bg-primary text-white py-1 px-4 rounded-2 border-0 fs-5 w-64 mt-5 "
+                    id="calculate-btn">Calculate</button>
+                </div>
+
+                <h4 class="text-center mt-3 w-96">Player Expenses: <span id="totalIncome" class="text-info">0</span>
+                </h4>
+
+                
+                <p class="text-center mt-3 mr-10">Manager: <input type="text" id="food-field"
+                        class="border border-1 px-2 py-1 rounded-1 bg-black"></p>
+
+                <p class="text-center mt-3 mr-5">Coach: <input type="text" id="rent-field"
+                        class="border border-1 px-2 py-1 rounded-1 bg-black"></p>
+
+
+
+                <div class="text-center">
+                    <button class="bg-primary text-white py-1 px-4 rounded-2 border-0 fs-5 w-64 mt-5"
+                        id="calculate-btn">Calculate Total</button>
                 </div>
                 <h4 class="text-center mt-3">Total Expenses: <span id="total-expenses" class="text-info">0</span>
                 </h4>
-                <h4 class="text-center mt-3">Balance: <span id="balance" class="text-info">0</span></h4>
 
-                <div class="d-flex align-items-center justify-content-center">
-                    <p class="m-0">Save:</p>
-                    <input id="parcent-field" type="text" class="mx-2 border border-1 px-2 py-1 rounded-1">
-                    % <button id="save-btn"
-                        class="bg-primary text-white py-1 px-4 rounded-2 border-0 fs-5 ms-2">save</button>
-                </div>
-                <div class="text-center mt-2">
-                    <h4>Saving Amount: <span id="saving-amount" class="text-info">0</span></h4>
-                    <h4>Remaining Balance: <span id="remaining-balance" class="text-info">0</span></h4>
-                </div>
+
             </div>
         </div>
+
+
     </section> 
+
+
+
 
     <!--footer-->
     <div class="footer">
@@ -187,7 +193,7 @@
     <div class="bg-black text-white text-center pb-5">
         <h2>Copyright @ 2022 All Rights Reserved.</h2>
     </div>
-    
+
 <script src="js/player.js"></script>
 </body>
 </html>
